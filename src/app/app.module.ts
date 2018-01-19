@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {RouterModule}from '@angular/router'
 
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { TransaccionSoapComponent } from './transaccion-soap/transaccion-soap.component';
 
 
@@ -13,7 +14,8 @@ import { TransaccionSoapComponent } from './transaccion-soap/transaccion-soap.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
